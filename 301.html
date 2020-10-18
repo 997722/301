@@ -1,4 +1,26 @@
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <title>域名跳转已经到期，请联系管理员及时续费！</title>
+    <style>
+        *{ margin: 0; padding: 0; font-family:"Microsoft Yahei"; }
+        html .root{ width: 800px; border: 1px solid #D02090; overflow:hidden; margin:50px auto; }
+        .root p{ width: 798px; height:32px; border: 1px solid #D02090; background:#D02090; line-height: 32px; text-align: center; font-size: 18px; color: #fff;  }
+        .root_in{ width: 800px; height:200px; border-top: 1px solid #fc6b00;   }
+        .root_in h5{ width: 800px; height: 30px; margin-top: 10px; line-height: 50px; text-align: center;font-size: 30px; color: #ef0f0f; }
+        .root_in h6{ width: 800px;font-weight: normal;margin-top: 20px; font-size: 16px; color: #373737; text-align: center;  }
+        .root_in h6 a{ color: #D02090; }
+		 .root_in h4{ width: 800px; height: 50px; margin-top: 20px; line-height: 150px; text-align: center;font-size: 20px; color: #d02090; }
+    </style>
+
+
+</head>
+
+<body>
+
 <script>
   setTimeout(function(){
    var arr=[
@@ -41,9 +63,22 @@
 
    ];
   window.location.href=arr[parseInt(Math.random()*arr.length)];
-  },0000);
+  },3000);
   
 document.write(arr[arr.length]);
+</script>
+
+
+
+<script>
+　　var t=3;//设定跳转的时间
+　　setInterval("refer()",1000); //启动1秒定时
+　　function refer(){
+　　　　
+　　　　document.getElementById('show').innerHTML=""+t+"秒后自动为您推荐精彩内容"; // 显示倒计时
+　　　　t--; // 计数器递减
+
+　　}
 </script>
 
 
@@ -51,5 +86,18 @@ document.write(arr[arr.length]);
 
 
 
+<div style="text-align:center;">
+<div class="root">
+    <p>信息提示</p>
+    <div class="root_in">
+        <h5>域名跳转已经到期，请联系管理员及时续费！</h5>
+		 <h4><span id="show"></span></h4>
+        <h6></h6>
 
+    </div>
 
+</div>
+</div>
+<script type="text/javascript" src="https://js.users.51.la/20902621.js"></script>
+</body>
+</html>
